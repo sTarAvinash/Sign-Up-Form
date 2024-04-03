@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sign up form for a website. Includes fields for full name, email, password, confirm password, date of birth, role, and terms acceptance.">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Sign Up</h1>
+        </header>
+        <main>
+            <form id="signup-form">
+                <section>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <br>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <br>
+                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password"
+                        required>
+                    <br>
+                    <input type="text" name="date" id="date" placeholder="MM/DD/YYYY" required>
+                    <br>
+                </section>
+                <section>
+                    <label for="student">
+                        <input type="radio" name="role" id="student" value="student" required>
+                        Student
+                    </label>
+                    <label for="employee">
+                        <input type="radio" name="role" id="employee" value="employee" required>
+                        Employee
+                    </label>
+                </section>
+                <section>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to all the Terms and Conditions
+                    </label>
+                </section>
+            </form>
+            <button type="submit">Signup</button>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
